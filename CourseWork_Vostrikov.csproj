@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEF7234E-8262-45C4-B4BB-09C4795D0A61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CourseWork_Vostrikov</RootNamespace>
+    <AssemblyName>CourseWork_Vostrikov</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbHelper\SQL.cs" />
+    <Compile Include="Entities\Table.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddBreed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddBreed.Designer.cs">
+      <DependentUpon>FormAddBreed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDog.Designer.cs">
+      <DependentUpon>FormAddDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddOwner.Designer.cs">
+      <DependentUpon>FormAddOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteBreed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteBreed.Designer.cs">
+      <DependentUpon>FormDeleteBreed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteDog.Designer.cs">
+      <DependentUpon>FormDeleteDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteOwner.Designer.cs">
+      <DependentUpon>FormDeleteOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteOwnerDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteOwnerDog.Designer.cs">
+      <DependentUpon>FormDeleteOwnerDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddOwnerDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddOwnerDog.Designer.cs">
+      <DependentUpon>FormAddOwnerDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateBreed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateBreed.Designer.cs">
+      <DependentUpon>FormUpdateBreed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateDog.Designer.cs">
+      <DependentUpon>FormUpdateDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateOwner.Designer.cs">
+      <DependentUpon>FormUpdateOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateOwnerDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateOwnerDog.Designer.cs">
+      <DependentUpon>FormUpdateOwnerDog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddBreed.resx">
+      <DependentUpon>FormAddBreed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddDog.resx">
+      <DependentUpon>FormAddDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddOwner.resx">
+      <DependentUpon>FormAddOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteBreed.resx">
+      <DependentUpon>FormDeleteBreed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteDog.resx">
+      <DependentUpon>FormDeleteDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteOwner.resx">
+      <DependentUpon>FormDeleteOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteOwnerDog.resx">
+      <DependentUpon>FormDeleteOwnerDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddOwnerDog.resx">
+      <DependentUpon>FormAddOwnerDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateBreed.resx">
+      <DependentUpon>FormUpdateBreed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateDog.resx">
+      <DependentUpon>FormUpdateDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateOwner.resx">
+      <DependentUpon>FormUpdateOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateOwnerDog.resx">
+      <DependentUpon>FormUpdateOwnerDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconOwner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconWolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-картотека-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-мопс-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-мопс-96.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
